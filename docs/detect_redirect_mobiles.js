@@ -12,11 +12,11 @@ let mobileAndTabletCheck = function() {
   let redirect = '';
   if (mobileAndTabletCheck())
   {
-    redirect = 'https://mariagemargotetvalent.in/mobile/' + page;
+    redirect = window.location.origin + '/mobile/' + page;
   }
   else
   {
-    redirect = 'https://mariagemargotetvalent.in/' + page;
+    redirect =  window.location.origin + '/' + page;
   }
   if (window.location.href !== redirect)
   {
